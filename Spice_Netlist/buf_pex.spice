@@ -1,0 +1,22 @@
+* NGSPICE file created from copy.ext - technology: sky130A
+
+.subckt copy A VDD VGND Y
+X0 out1 A VDD VDD sky130_fd_pr__pfet_01v8 ad=0.381 pd=3.14 as=0.381 ps=3.14 w=1.27 l=0.15
+**devattr s=15240,628 d=15240,628
+X1 Y out1 VDD VDD sky130_fd_pr__pfet_01v8 ad=0.381 pd=3.14 as=0.381 ps=3.14 w=1.27 l=0.15
+**devattr s=15240,628 d=15240,628
+X2 Y out1 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.15
+**devattr s=5040,288 d=5040,288
+X3 out1 A VGND VGND sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.15
+**devattr s=5040,288 d=5040,288
+C0 VDD Y 0.1642f
+C1 VDD out1 0.33741f
+C2 VDD A 0.07945f
+C3 Y out1 0.04407f
+C4 A out1 0.05503f
+C5 Y VGND 0.17045f
+C6 VDD VGND 1.07612f
+C7 A VGND 0.31f
+C8 out1 VGND 0.37927f
+.ends
+

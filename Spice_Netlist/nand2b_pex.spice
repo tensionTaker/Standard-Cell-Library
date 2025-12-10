@@ -1,0 +1,37 @@
+* NGSPICE file created from nand2b_mod.ext - technology: sky130A
+
+.subckt nand2b_pex A B vout vdd VSS
+X0 vout vx net1 VSS sky130_fd_pr__nfet_01v8 ad=0.456 pd=3.64 as=0.456 ps=3.64 w=1.52 l=0.15
+**devattr s=18240,728 d=18240,728
+X1 net1 B VSS VSS sky130_fd_pr__nfet_01v8 ad=0.456 pd=3.64 as=0.456 ps=3.61 w=1.52 l=0.15
+**devattr s=18240,728 d=18240,728
+X2 vdd vx vout vdd sky130_fd_pr__pfet_01v8 ad=1.02 pd=7.30662 as=1.02 ps=7.38286 w=3.4 l=0.15
+**devattr s=40800,1480 d=40800,1480
+X3 vdd A vx vdd sky130_fd_pr__pfet_01v8 ad=1.524 pd=10.91695 as=1.524 ps=10.76 w=5.08 l=0.15
+**devattr s=60960,2152 d=60960,2152
+X4 vx A VSS VSS sky130_fd_pr__nfet_01v8 ad=0.504 pd=3.96 as=0.504 ps=3.99 w=1.68 l=0.15
+**devattr s=20160,792 d=20160,792
+X5 vdd B vout vdd sky130_fd_pr__pfet_01v8 ad=1.08 pd=7.73642 as=1.08 ps=7.81714 w=3.6 l=0.15
+**devattr s=43200,1560 d=43200,1560
+C0 vx vdd 0.72919f
+C1 vx vout 0.07831f
+C2 A vx 0.11125f
+C3 B vx 0.01484f
+C4 net1 vx 0.02322f
+C5 vout vdd 0.73699f
+C6 A vdd 0.20707f
+C7 B vdd 0.20804f
+C8 net1 vdd 0.01019f
+C9 A vout 0
+C10 B vout 0.06632f
+C11 net1 vout 0.25883f
+C12 A net1 0
+C13 B net1 0.03056f
+C14 B VSS 0.61283f
+C15 A VSS 0.63095f
+C16 net1 VSS 0.39452f
+C17 vout VSS 0.29981f
+C18 vx VSS 0.95687f
+C19 vdd VSS 4.16387f
+.ends
+
